@@ -28,12 +28,14 @@ public class ItemsHelper{
 	public static Item siliconChip;
 	public static Item research;
 	public static Item robotModel;
+	public static Item uraniumIngot;
 	
 	public static Item raspberry;
 	public static Item raspberryPie;
 	
 	public static void setupItems() {
 		//Item Loading
+		uraniumIngot = new ItemIngot(IDsHelper.uraniumIngotID, "UraniumIngot").setCreativeTab(CommunityMod.modTab);
 		leadIngot = new ItemIngot(IDsHelper.leadIngotID, "LeadIngot").setCreativeTab(CommunityMod.modTab);
 		titaniumIngot = new ItemIngot(IDsHelper.titaniumIngotID, "TitaniumIngot").setCreativeTab(CommunityMod.modTab);
 		copperIngot = new ItemIngot(IDsHelper.copperIngotID, "CopperIngot").setCreativeTab(CommunityMod.modTab);
@@ -78,6 +80,7 @@ public class ItemsHelper{
 		GameRegistry.registerItem(siliconChip, "SiliconChip");
 		GameRegistry.registerItem(research, "Research");
 		GameRegistry.registerItem(robotModel, "RobotModel");
+		GameRegistry.registerItem(uraniumIngot, "UraniumIngot");
         
 		GameRegistry.registerItem(raspberry, "Raspberry");
 		GameRegistry.registerItem(raspberryPie, "Raspberry Pie");
@@ -103,6 +106,7 @@ public class ItemsHelper{
 		LanguageRegistry.addName(siliconChip, "Silicon Chip");
         LanguageRegistry.addName(research, "Research");
         LanguageRegistry.addName(robotModel, "Robot Model");
+        LanguageRegistry.addName(uraniumIngot, "Uranium Ingot");
 		
 		LanguageRegistry.addName(raspberry, "Raspberry");
 		LanguageRegistry.addName(raspberryPie, "Raspberry Pie");
